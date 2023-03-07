@@ -1,6 +1,4 @@
 import os
-from flight import Flight
-from datetime import datetime
 
 class MessageOriginator:
   
