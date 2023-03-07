@@ -4,6 +4,7 @@ from apiformatter import ApiFormatter
 from searchcriteria import SearchCriteria
 
 class ApiRequester:
+  @classmethod
   def SearchFlight(self, search_criteria: SearchCriteria) -> list:
     # Build API call parameters and headers
     flight_params = self.__buildParameters(search_criteria)
@@ -28,6 +29,7 @@ class ApiRequester:
     # Return a list of Flights
     return formatted_data
 
+  @classmethod
   def __buildParameters(self, search_criteria: SearchCriteria) -> dict:
     date_format = os.environ.get('DATETIME_FORMAT')
     return {
@@ -42,5 +44,6 @@ class ApiRequester:
       "price_to"    :search_criteria.PriceTo()
     }
 
+  @classmethod
   def __buildHeader(self) -> dict:
     return { "apikey":os.environ.get("APY_KEY") }
