@@ -44,6 +44,3 @@ class ApiRequester:
 
   def __buildHeader(self) -> dict:
     return { "apikey":os.environ.get("APY_KEY") }
-
-if __name__ == "__main__":
-  ApiRequester().SearchFlight()
