@@ -1,0 +1,11 @@
+{
+  "fly_from"   : "ABC",
+  "fly_to"     : "ABC",
+  "date_from"  : "12/02/2023",
+  "date_to"    : "22/02/2023",
+  "return_from": "12/02/2023",
+  "return_to"  : "22/02/2023",
+  "adults"     : 1,
+  "price_from" : 20,
+  "price_to"   : 50
+}
